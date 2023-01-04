@@ -1,0 +1,15 @@
+p {
+    color: azure;
+    text-align: center;
+}
+
+div {
+    color: azure;
+    text-align: center;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}

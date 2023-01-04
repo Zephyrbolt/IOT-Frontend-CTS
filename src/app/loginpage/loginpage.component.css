@@ -1,0 +1,19 @@
+div {
+    color:black;
+}
+
+.row>* {
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  /* span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+input.ng-invalid.ng-touched {
+    border: red 1px;
+}

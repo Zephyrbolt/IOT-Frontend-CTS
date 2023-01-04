@@ -1,0 +1,23 @@
+<div><p>Welcome {{ name }} to this application </p></div>
+
+<div class="container-fluid">
+    <table border=" 10" class="center">
+        <caption>  <p> Sensor's Live feed data  </p></caption>
+        <thead>
+            <tr>
+                <th>FloorNumber</th>
+                <th>O2</th>
+                <th>Co2</th>
+                <th>So2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor=" let dats of data">
+                <td>{{ dats.FloorNumber }}</td>
+                <td>{{ dats.O2 }}</td>
+                <td>{{ dats.Co2 }}</td>
+                <td>{{ dats.So2 }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

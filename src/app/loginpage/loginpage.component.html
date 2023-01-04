@@ -1,0 +1,24 @@
+<br>
+<br>
+<div class="container-fluid">
+    <div class="jumbotron"><span></span>
+        <div>
+            <p *ngIf="invalidlogin; else notvalid"> Please enter Username and password</p>
+            <ng-template #notvalid> <p> Invalid username and password! Please Try again </p> </ng-template>
+            <br>
+            Username : <input type="email" id="email" name="username" #email = "ngModel" [(ngModel)] ="username">
+            <span class="help-block" *ngIf="!email.valid && !email.touched"> Please enter a email</span>
+        </div>
+        <br>
+        <div>
+            Password: <input type="password" name="password" [(ngModel)] = "password">
+        </div>
+        <br>
+        <div>
+            <button type="button" class="btn btn-primary" (click)="UserLogin()"> Login </button>
+        </div>
+    </div>
+</div>
+<!-- <div class="row m-2">
+    <div class="p-3 mb-2  bg-light text-white"></div><span> => .bg-light</span>
+  </div> -->
