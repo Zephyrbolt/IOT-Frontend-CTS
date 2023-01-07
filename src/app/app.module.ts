@@ -11,6 +11,8 @@ import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { AQMSComponent } from './aqms/aqms.component';
 import { AppRoutingModule } from './app-routing.module';
 import { StarterpageComponent } from './starterpage/starterpage.component';
+import { TopComponent } from './top/top.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { StarterpageComponent } from './starterpage/starterpage.component';
     ErrorpageComponent,
     AQMSComponent,
     StarterpageComponent,
+    TopComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

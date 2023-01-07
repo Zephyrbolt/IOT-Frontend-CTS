@@ -4,12 +4,13 @@ import { AppComponent } from './app.component';
 import { AQMSComponent } from './aqms/aqms.component';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { HeaderComponent } from './header/header.component';
+import { RouteGuardService } from './service/route-guard.service';
 import { StarterpageComponent } from './starterpage/starterpage.component';
 
 const routes: Routes = [
     { path: '', component: HeaderComponent},
     { path: 'login', component: HeaderComponent},
-    { path: 'data/:name', component: AQMSComponent},
+    { path: 'data/:name', component: AQMSComponent, canActivate:[RouteGuardService]},
     { path: '**', component: ErrorpageComponent}
 ];
 

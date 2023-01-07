@@ -7,7 +7,7 @@ import { Directive, OnInit, Renderer2, ElementRef, HostListener, HostBinding, In
 export class AnotherdirectiveDirective implements OnInit{
 
   @Input() mouseOn :string = ' green '
-  @Input() mouseoff: string =' white'
+  @Input() mouseoff: string =' black'
   @HostBinding('style.backgroundColor') backgroundColor : string | undefined;
 
   constructor(private ref: ElementRef, private rendder: Renderer2) { }

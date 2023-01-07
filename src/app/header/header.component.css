@@ -1,4 +1,4 @@
-h1 { color: #ed0e0e; font-family: 'Droid serif', serif; font-size: 56px; font-weight: 500; font-style:normal ; line-height: 104px; margin: 0 0 52px; text-align: center; text-shadow: black; }
+h1 { color: #ffffff; font-family: 'Droid serif', serif; font-size: 56px; font-weight: 500; font-style:normal ; line-height: 104px; margin: 0 0 52px; text-align: center; text-shadow: black; }
 p {
     color: azure; font-family:sans-serif;  text-align: center;
 }
@@ -8,8 +8,18 @@ p {
 
 .card-text{
 
-    color:darksalmon; font-size: 30px; font-family:monospace; font-style: italic; font-size-adjust: initial; text-align:center
+    color:darksalmon; font-size: 30px; font-family:Georgia, 'Times New Roman', Times, serif; font-style:normal; font-size-adjust: initial; text-align:center
 }
 b{
     color: azure; font-family: Georgia, 'Times New Roman', Times, serif ; text-align: center; 
 }
+.nl{
+    position: absolute;
+    bottom: 0;
+}
+div.ex1 {
+    background-color: rgb(37, 38, 39);
+    width: 100%;
+    height: 290px;
+    overflow: scroll;
+  }
